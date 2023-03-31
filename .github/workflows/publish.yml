@@ -7,14 +7,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
-          registry-url: 'https://registry.npmjs.org'
-          scope: '@sonodary'
-      - run: yarn lint
-      - run: yarn test
+          node-version: "16.x"
+          registry-url: "https://registry.npmjs.org"
+          scope: "@sonodary"
+
+      - run: yarn install
+
+      - run: yarn lint && yarn test
+
       - run: yarn build
+
       - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

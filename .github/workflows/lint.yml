@@ -4,7 +4,6 @@ on:
   - pull_request
 
 jobs:
-
   eslint:
     name: eslint
 
@@ -15,10 +14,9 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: "16.x"
 
-      - name: install
-        run: yarn install
+      - run: yarn install
 
       - name: eslint
         uses: reviewdog/action-eslint@v1
