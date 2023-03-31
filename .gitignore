@@ -1,0 +1,6 @@
+.reg-assets/
+lib/
+coverage/
+__tests__/report-fixture-expected
+node_modules/
+*.tsbuildinfo

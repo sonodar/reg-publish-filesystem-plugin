@@ -1,0 +1,46 @@
+{
+  "name": "reg-publish-filesystem-plugin",
+  "version": "0.1.0",
+  "description": "Fetch and publish snapshot images to local filesystem.",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint --ext .ts,.js .",
+    "format": "prettier --write .",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "keywords": [
+    "reg",
+    "reg-suit-plugin"
+  ],
+  "author": {
+    "name": "sonodar",
+    "email": "ryoheisonoda@outlook.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sonodar/reg-publish-filesystem-plugin.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "reg-suit-util": "^0.12.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.7",
+    "reg-suit-interface": "^0.12.1",
+    "rimraf": "^4.4.1",
+    "ts-jest": "^29.0.5",
+    "typescript": "^5.0.2",
+    "typescript-eslint-language-service": "^5.0.3"
+  }
+}
