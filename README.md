@@ -1,3 +1,7 @@
+![lint](https://github.com/sonodar/reg-publish-filesystem-plugin/actions/workflows/lint.yml/badge.svg)
+![test](https://github.com/sonodar/reg-publish-filesystem-plugin/actions/workflows/test.yml/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/sonodar/reg-publish-filesystem-plugin/badge.svg?branch=master)](https://coveralls.io/github/sonodar/reg-publish-filesystem-plugin?branch=master)
+
 # reg-publish-filesystem-plugin
 
 Fetch and publish snapshot images to local filesystem.

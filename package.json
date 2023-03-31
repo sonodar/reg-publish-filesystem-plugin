@@ -20,7 +20,10 @@
     "name": "sonodar",
     "email": "ryoheisonoda@outlook.com"
   },
-  "repository": "git+https://github.com/sonodar/reg-publish-filesystem-plugin.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sonodar/reg-publish-filesystem-plugin.git"
+  },
   "license": "MIT",
   "dependencies": {
     "reg-suit-util": "^0.12.1"

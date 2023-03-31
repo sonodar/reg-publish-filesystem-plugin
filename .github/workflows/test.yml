@@ -1,0 +1,29 @@
+name: jest
+
+on:
+  - pull_request
+
+jobs:
+
+  test:
+    name: jest
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: install
+        run: yarn install
+
+      - name: jest
+        run: yarn test --coverage
+
+      - name: coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ github.token }}

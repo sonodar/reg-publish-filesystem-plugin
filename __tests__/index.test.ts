@@ -16,16 +16,16 @@ describe("E2E test", () => {
   };
 
   const dirsA = {
-    base: __dirname + "/../e2e/report-fixture",
-    actualDir: __dirname + "/../e2e/report-fixture/dir_a",
-    expectedDir: __dirname + "/../e2e/report-fixture/dir_b",
+    base: __dirname + "/report-fixture",
+    actualDir: __dirname + "/report-fixture/dir_a",
+    expectedDir: __dirname + "/report-fixture/dir_b",
     diffDir: "",
   };
 
   const dirsB = {
-    base: __dirname + "/../e2e/report-fixture-expected",
-    actualDir: __dirname + "/../e2e/report-fixture-expected/dir_a",
-    expectedDir: __dirname + "/../e2e/report-fixture-expected/dir_b",
+    base: __dirname + "/report-fixture-expected",
+    actualDir: __dirname + "/report-fixture-expected/dir_a",
+    expectedDir: __dirname + "/report-fixture-expected/dir_b",
     diffDir: "",
   };
 
