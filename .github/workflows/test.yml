@@ -1,7 +1,7 @@
 name: jest
 
 on:
-  - pull_request
+  - push
 
 jobs:
   test:
