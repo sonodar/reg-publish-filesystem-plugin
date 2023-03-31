@@ -6,7 +6,7 @@ export async function existsDir(path: PathLike): Promise<boolean> {
     const stat = await fs.lstat(path);
     return stat.isDirectory();
   } catch (e: unknown) {
-    if ((e as any).code === "ENOENT") {
+    if ((e as { code?: string }).code === "ENOENT") {
       return false;
     }
     throw e;

@@ -11,7 +11,7 @@ export interface PluginConfig {
 export class FilesystemPublisher extends AbstractPublisher implements PublisherPlugin<PluginConfig> {
   name = "reg-publish-filesystem-plugin";
 
-  private _options!: PluginCreateOptions<any>;
+  private _options!: PluginCreateOptions<PluginConfig>;
   private _pluginConfig!: PluginConfig;
 
   init(config: PluginCreateOptions<PluginConfig>) {

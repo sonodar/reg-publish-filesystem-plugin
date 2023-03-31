@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "test": "jest",
-    "lint": "eslint --ext .ts,.js",
+    "lint": "eslint --ext .ts,.js .",
     "format": "prettier --write .",
     "build": "tsc -p tsconfig.build.json"
   },
