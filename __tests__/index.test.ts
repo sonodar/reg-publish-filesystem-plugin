@@ -1,9 +1,9 @@
 import { createLogger } from "reg-suit-util";
-import { FilesystemPreparer, SetupInquireResult } from "../lib/preparer";
-import { FilesystemPublisher } from "../lib/publisher";
+import { FilesystemPreparer, SetupInquireResult } from "../src/preparer";
+import { FilesystemPublisher } from "../src/publisher";
 import glob from "glob";
 import rimraf from "rimraf";
-import { existsDir } from "../lib/util";
+import { existsDir } from "../src/util";
 
 describe("E2E test", () => {
   const logger = createLogger();
