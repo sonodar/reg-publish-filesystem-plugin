@@ -45,8 +45,8 @@ describe("E2E test", () => {
   }
 
   function doAssertion() {
-    const list = glob.sync("dir_b/sample01.png", { cwd: dirsB.base });
-    expect(list[0]).toEqual("dir_b/sample01.png");
+    const list = glob.sync("dir_b/**/*.png", { cwd: dirsB.base }).sort();
+    expect(list).toEqual(["dir_b/sample01.png", "dir_b/sub_dir/sample01.png"]);
   }
 
   test("case 1: fetch files from default publish directory", async () => {
