@@ -1,6 +1,6 @@
 {
   "name": "reg-publish-filesystem-plugin",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Fetch and publish snapshot images to local filesystem.",
   "main": "lib/index.js",
   "files": [
