@@ -63,14 +63,14 @@ export class FilesystemPublisher extends AbstractPublisher implements PublisherP
   protected async uploadItem(key: string, item: FileItem) {
     const dest = path.resolve(this._storePath, key, item.path);
     await makeParentIfNotExists(dest);
-    await fs.cp(item.absPath, dest);
+    await fs.cp(item.absPath, dest, { recursive: true });
     return item;
   }
 
   protected async downloadItem(remoteItem: RemoteFileItem, item: FileItem) {
     await makeParentIfNotExists(item.absPath);
     const src = path.resolve(this._storePath, remoteItem.remotePath);
-    await fs.cp(src, item.absPath);
+    await fs.cp(src, item.absPath, { recursive: true });
     return item;
   }
 }
